@@ -1,5 +1,5 @@
 var assert = require('assert');
-var uuid = require('../lib/module/uuid');
+var uuid = require('../lib/uuid');
 
 describe('UUID', function () {
 

@@ -1,0 +1,36 @@
+{
+  "name": "vis-uuid",
+  "version": "1.0.0",
+  "description": "",
+  "main": "uuid.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/visjs/vis-uuid.git"
+  },
+  "author": "Alex de Mulder <alexdemulder@gmail.com>",
+  "contributors": [
+    "jos <wjosdejong@gmail.com>",
+    "macleodbroad-wf <macleodbroad-wf@users.noreply.github.com>",
+    "mojoaxel <dev@wunschik.net>"
+  ],
+  "scripts": {
+    "test": "mocha"
+  },
+  "engines": { 
+    "node" : ">=8"
+  },
+  "keywords": [
+    "uuid",
+    "vis",
+    "vis.js"
+  ],
+  "license": "(Apache-2.0 OR MIT)",
+  "bugs": {
+    "url": "https://github.com/visjs/vis-uuid/issues"
+  },
+  "homepage": "https://github.com/visjs/vis-uuid#README.md",
+  "dependencies": {
+    "assert": "^2.0.0",
+    "mocha": "^6.1.4"
+  }
+}
