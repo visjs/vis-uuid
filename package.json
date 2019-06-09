@@ -1,6 +1,6 @@
 {
   "name": "vis-uuid",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "",
   "main": "lib/uuid.js",
   "repository": {
@@ -29,7 +29,8 @@
     "url": "https://github.com/visjs/vis-uuid/issues"
   },
   "homepage": "https://github.com/visjs/vis-uuid#README.md",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "assert": "^2.0.0",
     "mocha": "^6.1.4"
   }
