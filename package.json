@@ -1,8 +1,8 @@
 {
   "name": "vis-uuid",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
-  "main": "uuid.js",
+  "main": "lib/uuid.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/visjs/vis-uuid.git"
@@ -16,8 +16,8 @@
   "scripts": {
     "test": "mocha"
   },
-  "engines": { 
-    "node" : ">=8"
+  "engines": {
+    "node": ">=8"
   },
   "keywords": [
     "uuid",
