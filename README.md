@@ -6,6 +6,10 @@ Comes in UMD version for good compatibility and ESM version ready for treeshakin
 
 This module is a part of the [visjs project](https://github.com/visjs).
 
+## Documentation
+
+<https://visjs.github.io/vis-uuid/>
+
 ## Building the project
 
 Clone the project:
