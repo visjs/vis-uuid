@@ -11,10 +11,10 @@
   },
   "author": "Alex de Mulder <alexdemulder@gmail.com>",
   "contributors": [
-    "jos <wjosdejong@gmail.com>",
-    "macleodbroad-wf <macleodbroad-wf@users.noreply.github.com>",
-    "mojoaxel <dev@wunschik.net>",
-    "Thomaash <tom.vycital@gmail.com>"
+    "Alexander Wunschik <alex@wunschik.net>",
+    "Tomáš Vyčítal <tom.vycital@gmail.com>",
+    "Alex de Mulder <alexdemulder@gmail.com>",
+    "jos <wjosdejong@gmail.com>"
   ],
   "scripts": {
     "build": "npm run build:types && npm run build:code && npm run build:docs",
@@ -25,7 +25,9 @@
     "fix": "npm run lint -- --fix",
     "lint": "eslint '{src,test}/**/*.{m,}{j,t}s{x,}'",
     "test": "BABEL_ENV=test mocha -r ./babel.mocha.js 'test/**/*.test.{j,t}s'",
-    "type-check": "tsc --noemit"
+    "type-check": "tsc --noemit",
+    "contributors:update": "git-authors-cli",
+    "preparepublish": "npm run contributors:update"
   },
   "engines": {
     "node": ">=8"
@@ -60,6 +62,7 @@
     "eslint": "^6.0.1",
     "eslint-config-prettier": "^6.0.0",
     "eslint-plugin-prettier": "^3.1.0",
+    "git-authors-cli": "^1.0.18",
     "mocha": "^6.1.4",
     "prettier": "^1.18.2",
     "rimraf": "^2.6.3",
