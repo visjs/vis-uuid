@@ -2,10 +2,10 @@ import resolve from 'rollup-plugin-node-resolve'
 import babel from 'rollup-plugin-babel'
 
 const babelConfingBase = {
-  extensions: ['.mts', '.ts', '.tsx', '.mjs', '.js', '.jsx'],
+  extensions: ['.ts', '.js'],
 }
 const resolveConfig = {
-  extensions: [...babelConfingBase.extensions, '.json', '.node'],
+  extensions: [...babelConfingBase.extensions, '.json'],
 }
 
 export default [

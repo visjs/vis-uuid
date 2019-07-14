@@ -1,72 +1,72 @@
 {
-    "name": "vis-uuid",
-    "version": "1.1.1",
-    "description": "UUIDv1 and UUIDv4 generator.",
-    "main": "dist/umd.js",
-    "module": "dist/esm.js",
-    "types": "dist/types/index.d.ts",
-    "repository": {
-        "type": "git",
-        "url": "git+https://github.com/visjs/vis-uuid.git"
-    },
-    "author": "Alex de Mulder <alexdemulder@gmail.com>",
-    "contributors": [
-        "jos <wjosdejong@gmail.com>",
-        "macleodbroad-wf <macleodbroad-wf@users.noreply.github.com>",
-        "mojoaxel <dev@wunschik.net>",
-        "Thomaash <tom.vycital@gmail.com>"
-    ],
-    "scripts": {
-        "build": "npm run build:types && npm run build:code && npm run build:docs",
-        "build:code": "rollup -c rollup.prod.config.js",
-        "build:docs": "typedoc ./src",
-        "build:types": "tsc -p tsconfig.types.json",
-        "clean": "rimraf '{docs,dist}/*'",
-        "fix": "npm run lint -- --fix",
-        "lint": "eslint '{src,test}/**/*.{m,}{j,t}s{x,}'",
-        "test": "BABEL_ENV=test mocha -r ./babel.mocha.js 'test/**/*.test.{j,t}s'",
-        "type-check": "tsc --noemit"
-    },
-    "engines": {
-        "node": ">=8"
-    },
-    "keywords": [
-        "uuid",
-        "vis",
-        "vis.js"
-    ],
-    "license": "(Apache-2.0 OR MIT)",
-    "bugs": {
-        "url": "https://github.com/visjs/vis-uuid/issues"
-    },
-    "homepage": "https://github.com/visjs/vis-uuid#README.md",
-    "files": [
-        "dist",
-        "LICENSE*"
-    ],
-    "dependencies": {},
-    "devDependencies": {
-        "@babel/core": "^7.5.0",
-        "@babel/preset-env": "^7.5.0",
-        "@babel/preset-typescript": "^7.3.3",
-        "@babel/register": "^7.4.4",
-        "@types/chai": "^4.1.7",
-        "@types/mocha": "^5.2.7",
-        "@types/node": "^12.0.12",
-        "@typescript-eslint/eslint-plugin": "^1.11.0",
-        "@typescript-eslint/parser": "^1.11.0",
-        "assert": "^2.0.0",
-        "chai": "^4.2.0",
-        "eslint": "^6.0.1",
-        "eslint-config-prettier": "^6.0.0",
-        "eslint-plugin-prettier": "^3.1.0",
-        "mocha": "^6.1.4",
-        "prettier": "^1.18.2",
-        "rimraf": "^2.6.3",
-        "rollup": "^1.16.6",
-        "rollup-plugin-babel": "^4.3.3",
-        "rollup-plugin-node-resolve": "^5.2.0",
-        "typedoc": "^0.14.2",
-        "typescript": "^3.5.2"
-    }
+  "name": "vis-uuid",
+  "version": "1.1.1",
+  "description": "UUIDv1 and UUIDv4 generator.",
+  "main": "dist/umd.js",
+  "module": "dist/esm.js",
+  "types": "dist/types/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/visjs/vis-uuid.git"
+  },
+  "author": "Alex de Mulder <alexdemulder@gmail.com>",
+  "contributors": [
+    "jos <wjosdejong@gmail.com>",
+    "macleodbroad-wf <macleodbroad-wf@users.noreply.github.com>",
+    "mojoaxel <dev@wunschik.net>",
+    "Thomaash <tom.vycital@gmail.com>"
+  ],
+  "scripts": {
+    "build": "npm run build:types && npm run build:code && npm run build:docs",
+    "build:code": "rollup -c rollup.config.js",
+    "build:docs": "typedoc ./src",
+    "build:types": "tsc -p tsconfig.types.json",
+    "clean": "rimraf '{docs,dist}/*'",
+    "fix": "npm run lint -- --fix",
+    "lint": "eslint '{src,test}/**/*.{m,}{j,t}s{x,}'",
+    "test": "BABEL_ENV=test mocha -r ./babel.mocha.js 'test/**/*.test.{j,t}s'",
+    "type-check": "tsc --noemit"
+  },
+  "engines": {
+    "node": ">=8"
+  },
+  "keywords": [
+    "uuid",
+    "vis",
+    "vis.js"
+  ],
+  "license": "(Apache-2.0 OR MIT)",
+  "bugs": {
+    "url": "https://github.com/visjs/vis-uuid/issues"
+  },
+  "homepage": "https://github.com/visjs/vis-uuid#README.md",
+  "files": [
+    "dist",
+    "LICENSE*"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "@babel/core": "^7.5.0",
+    "@babel/preset-env": "^7.5.0",
+    "@babel/preset-typescript": "^7.3.3",
+    "@babel/register": "^7.4.4",
+    "@types/chai": "^4.1.7",
+    "@types/mocha": "^5.2.7",
+    "@types/node": "^12.0.12",
+    "@typescript-eslint/eslint-plugin": "^1.11.0",
+    "@typescript-eslint/parser": "^1.11.0",
+    "assert": "^2.0.0",
+    "chai": "^4.2.0",
+    "eslint": "^6.0.1",
+    "eslint-config-prettier": "^6.0.0",
+    "eslint-plugin-prettier": "^3.1.0",
+    "mocha": "^6.1.4",
+    "prettier": "^1.18.2",
+    "rimraf": "^2.6.3",
+    "rollup": "^1.16.6",
+    "rollup-plugin-babel": "^4.3.3",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "typedoc": "^0.14.2",
+    "typescript": "^3.5.2"
+  }
 }
