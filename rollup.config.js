@@ -3,6 +3,7 @@ import babel from 'rollup-plugin-babel'
 
 const babelConfingBase = {
   extensions: ['.ts', '.js'],
+  runtimeHelpers: true,
 }
 const resolveConfig = {
   extensions: [...babelConfingBase.extensions, '.json'],
@@ -22,6 +23,7 @@ export default [
     output: {
       file: 'dist/umd.js',
       format: 'umd',
+      exports: 'named',
       name: 'visUUID',
     },
     plugins: [resolve(resolveConfig), babel(babelConfingBase)],
