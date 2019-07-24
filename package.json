@@ -1,6 +1,6 @@
 {
   "name": "vis-uuid",
-  "version": "1.1.1",
+  "version": "1.1.2",
   "description": "UUIDv1 and UUIDv4 generator.",
   "main": "dist/umd.js",
   "module": "dist/esm.js",
@@ -22,8 +22,8 @@
     "build:docs": "typedoc ./src",
     "build:types": "tsc -p tsconfig.types.json",
     "clean": "rimraf '{docs,dist}/*'",
-    "fix": "npm run lint -- --fix",
     "lint": "eslint '{src,test}/**/*.{m,}{j,t}s{x,}'",
+    "lint:fix": "npm run lint -- --fix",
     "prepublishOnly": "npm run test && npm run type-check && npm run lint",
     "preversion": "npm run test && npm run type-check && npm run lint",
     "test": "BABEL_ENV=test mocha",
