@@ -25,6 +25,7 @@ export default [
       format: 'umd',
       exports: 'named',
       name: 'visUUID',
+      extend: true
     },
     plugins: [resolve(resolveConfig), babel(babelConfingBase)],
   },
