@@ -1,13 +1,13 @@
 {
   "name": "vis-uuid",
-  "version": "1.1.2",
+  "version": "0.0.0-no-version",
   "description": "UUIDv1 and UUIDv4 generator.",
   "main": "dist/umd.js",
   "module": "dist/esm.js",
   "types": "dist/types/index.d.ts",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/visjs/vis-uuid.git"
+    "url": "https://github.com/visjs/vis-uuid.git"
   },
   "author": "Alex de Mulder <alexdemulder@gmail.com>",
   "contributors": [
