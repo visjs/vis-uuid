@@ -89,6 +89,7 @@
     "rollup": "^1.16.6",
     "rollup-plugin-babel": "^4.3.3",
     "rollup-plugin-node-resolve": "^5.2.0",
+    "semantic-release": "^15.13.21",
     "typedoc": "^0.14.2",
     "typescript": "^3.5.2"
   }
