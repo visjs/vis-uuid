@@ -59,6 +59,10 @@
     "dist",
     "LICENSE*"
   ],
+  "funding": {
+    "type": "opencollective",
+    "url": "https://opencollective.com/visjs"
+  },
   "dependencies": {},
   "devDependencies": {
     "@babel/core": "^7.5.0",
