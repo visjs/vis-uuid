@@ -105,6 +105,6 @@
     "stryker-cli": "^1.0.0",
     "typedoc": "^0.15.0",
     "typescript": "^3.5.2",
-    "vis-dev-utils": "^1.2.0"
+    "vis-dev-utils": "^2.0.0"
   }
 }
