@@ -2,9 +2,11 @@
   "name": "vis-uuid",
   "version": "0.0.0-no-version",
   "description": "UUIDv1 and UUIDv4 generator.",
-  "main": "dist/umd.js",
-  "module": "dist/esm.js",
-  "types": "dist/types/index.d.ts",
+  "browser": "peer/umd/vis-uuid.min.js",
+  "jsnext": "esnext/esm/vis-uuid.js",
+  "main": "peer/umd/vis-uuid.js",
+  "module": "peer/esm/vis-uuid.js",
+  "types": "declarations/index.d.ts",
   "repository": {
     "type": "git",
     "url": "https://github.com/visjs/vis-uuid.git"
@@ -18,7 +20,7 @@
   ],
   "scripts": {
     "build": "npm run build:types && npm run build:code && npm run build:docs",
-    "build:code": "rollup -c rollup.config.js",
+    "build:code": "rollup -c rollup.build.js",
     "build:docs": "typedoc ./src",
     "build:types": "tsc -p tsconfig.types.json",
     "clean": "rimraf '{docs,dist}/*'",
@@ -55,7 +57,10 @@
   },
   "homepage": "https://github.com/visjs/vis-uuid#README.md",
   "files": [
-    "dist",
+    "declarations",
+    "esnext",
+    "peer",
+    "standalone",
     "LICENSE*"
   ],
   "funding": {
@@ -71,6 +76,11 @@
     "@babel/preset-typescript": "7.8.3",
     "@babel/register": "7.8.3",
     "@babel/runtime-corejs3": "7.8.4",
+    "@rollup/plugin-alias": "3.0.1",
+    "@rollup/plugin-commonjs": "11.0.2",
+    "@rollup/plugin-json": "4.0.2",
+    "@rollup/plugin-node-resolve": "7.1.1",
+    "@rollup/plugin-strip": "1.3.2",
     "@stryker-mutator/babel-transpiler": "2.5.0",
     "@stryker-mutator/core": "2.5.0",
     "@stryker-mutator/html-reporter": "2.5.0",
@@ -83,8 +93,10 @@
     "@typescript-eslint/eslint-plugin": "2.20.0",
     "@typescript-eslint/parser": "2.20.0",
     "assert": "2.0.0",
+    "babel-plugin-css-modules-transform": "1.6.2",
     "babel-plugin-istanbul": "6.0.0",
     "chai": "4.2.0",
+    "core-js": "3.6.4",
     "eslint": "6.8.0",
     "eslint-config-prettier": "6.10.0",
     "eslint-plugin-prettier": "3.1.2",
@@ -96,12 +108,17 @@
     "prettier": "1.19.1",
     "rimraf": "3.0.2",
     "rollup": "1.31.1",
+    "rollup-plugin-analyzer": "3.2.2",
     "rollup-plugin-babel": "4.3.3",
+    "rollup-plugin-copy": "3.3.0",
     "rollup-plugin-node-resolve": "5.2.0",
+    "rollup-plugin-postcss": "2.0.6",
+    "rollup-plugin-terser": "5.2.0",
+    "rollup-plugin-typescript2": "0.25.3",
     "semantic-release": "17.0.4",
     "stryker-cli": "1.0.0",
     "typedoc": "0.16.10",
     "typescript": "3.7.5",
-    "vis-dev-utils": "2.1.0"
+    "vis-dev-utils": "2.2.0"
   }
 }

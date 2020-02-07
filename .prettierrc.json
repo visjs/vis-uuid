@@ -1,7 +1,25 @@
 {
-  "parser": "typescript",
-  "singleQuote": true,
-  "printWidth": 100,
-  "semi": false,
-  "trailingComma": "es5"
+  "overrides": [
+    {
+      "files": [
+        "src/index.ts",
+        "src/parsing.ts",
+        "src/random.ts",
+        "src/types.ts",
+        "src/uuid1.ts",
+        "src/uuid4.ts",
+        "test/api-old.test.ts",
+        "test/parsing.test.ts",
+        "test/uuid1.test.ts",
+        "test/uuid4.test.ts"
+      ],
+      "options": {
+        "parser": "typescript",
+        "singleQuote": true,
+        "printWidth": 100,
+        "semi": false,
+        "trailingComma": "es5"
+      }
+    }
+  ]
 }
