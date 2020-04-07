@@ -1,3 +1,9 @@
+# DEPRECATED 
+## We don't use this library anymore so you shouldn't either.
+### use [uuid](https://github.com/uuidjs/uuid)
+
+
+
 # Vis UUID
 
 [![Greenkeeper badge](https://badges.greenkeeper.io/visjs/vis-uuid.svg)](https://greenkeeper.io/)
